@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>parallax demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../dist/paralax.js"></script>
+        <link rel="stylesheet" type="text/css" href="../dist/paralax.css" />
+        <style>
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image1" data-image="img/n1.jpg">
+            <strong>IMAGE 1</strong><br />
+            text text text text text text text
+        </div>
+        <div class="image1" data-image="img/n2.jpg">
+            image 2
+        </div>
+        <div class="image1" data-image="img/n3.jpg">
+            image 3
+        </div>
+        <script>
+            $(".image1").wgParallax();
+        </script>
+    </body>
+</html>
